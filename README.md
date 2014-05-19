@@ -3,4 +3,4 @@ Sandbox
 
 sandbox
 
- boolean function（input，status，message，log，output）
+ boolean function(input,status,message,log,output)
