@@ -14,7 +14,7 @@ ref: Griffin, Lewis D., et al. "Basic image features (bifs) arising from approxi
 
 ImageProcessing (undergrad)
 
-notes:
+notes:  
 1. boolean function(input,status,message,log,output)  
 2.   
 git add --all   
