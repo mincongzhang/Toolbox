@@ -16,7 +16,6 @@ ImageProcessing (undergrad)
 
 notes:  
 1. boolean function(input,status,message,log,output)  
-2.   
-git add --all   
+2.git add --all   
 git commit -m 'initial commit'  
 git push origin master  
