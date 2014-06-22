@@ -14,4 +14,9 @@ ref: Griffin, Lewis D., et al. "Basic image features (bifs) arising from approxi
 
 ImageProcessing (undergrad)
 
-boolean function(input,status,message,log,output)
+notes:
+1. boolean function(input,status,message,log,output)
+2.   
+git add --all 
+git commit -m 'initial commit'
+git push origin master
