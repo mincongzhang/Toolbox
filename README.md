@@ -15,10 +15,15 @@ ref: Griffin, Lewis D., et al. "Basic image features (bifs) arising from approxi
 ImageProcessing (undergrad)
 
 notes:  
+C++:  
 1. boolean function(input,status,message,log,output)  
-2.git add --all   
+2. int y = static_cast<int>(x);
+
+
+Git:
+1. git add --all   
 git commit -m 'initial commit'  
 git push origin master  
 
 
-int y = static_cast<int>(x);
+
