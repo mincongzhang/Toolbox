@@ -17,17 +17,3 @@ ImageProcessing (undergrad)
 
 
 
-notes:  
-C++:  
-1. boolean function(input,status,message,log,output)  
-2. int y = static_cast<int>(x);
-3. memset(grid,false,grid_size*sizeof(bool));
-4. polymorphism：the provision of a single interface to entities of different types.A polymorphic type is a type whose operations can also be applied to values of some other type, or types.  
-
-Git:  
-1. git add --all   
-git commit -m 'initial commit'  
-git push origin master  
-
-
-
