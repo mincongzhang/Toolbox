@@ -1,3 +1,7 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
 std::string GetStdoutFromCommand(std::string cmd) {
 
   std::string data;
