@@ -1,6 +1,7 @@
 #include <sstream>
 
-template std::string NumberToString ( T Number )
+template<typename T>
+std::string NumberToString ( T Number )
 {
   stringstream ss;
   ss << Number;
