@@ -3,3 +3,5 @@
 
 #awk: -F option to specify ":" as the field separator
 #e.g.:  awk -F ';' '{print $21}'
+
+cat file | grep sth | awk '{print $3, $5}'
