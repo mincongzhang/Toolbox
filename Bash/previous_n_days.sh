@@ -7,3 +7,7 @@ echo $pre_date
 pre_date=`date +'%Y%m%d' -d "-5 days"`
 echo $pre_date
 
+#Or
+pre_date=`date +'%Y%m%d' --date='-1 day'`
+echo $pre_date
+
