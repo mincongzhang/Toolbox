@@ -5,35 +5,35 @@
 #include <utility>//make pair
 #include <map>
 
+namespace {
+  #define log(msg) do{ std::cout<<msg<<"\n"; }while(0)
 
-#define log(msg) do{ std::cout<<msg<<"\n"; }while(0)
-
-template <typename T>
-inline std::ostream& operator<< (std::ostream &os, const std::vector<T> & value ) {
-  for(typename std::vector<T>::const_iterator it=value.begin(); it!=value.end(); ++it){
-    os<<"["<<*it<<"]";
+  template <typename T>
+  inline std::ostream& operator<< (std::ostream &os, const std::vector<T> & value ) {
+    for(typename std::vector<T>::const_iterator it=value.begin(); it!=value.end(); ++it){
+      os<<"["<<*it<<"]";
+    }
+    return os;
   }
-  return os;
-}
 
-template <typename T>
-inline std::ostream& operator<< (std::ostream &os, const std::set<T> & value ) {
-  for(typename std::set<T>::const_iterator it=value.begin(); it!=value.end(); ++it){
-    os<<"["<<*it<<"]";
+  template <typename T>
+  inline std::ostream& operator<< (std::ostream &os, const std::set<T> & value ) {
+    for(typename std::set<T>::const_iterator it=value.begin(); it!=value.end(); ++it){
+      os<<"["<<*it<<"]";
+    }
+    return os;
   }
-  return os;
-}
 
-template <typename Key,typename Value>
-inline std::ostream& operator<< (std::ostream &os, const std::map<Key,Value> & value ) {
-  os<<"[";
-  for(typename std::map<Key,Value>::const_iterator it=value.begin(); it!=value.end(); ++it){
-    os<<"("<<it->first<<"|"<<it->second<<")";
+  template <typename Key,typename Value>
+  inline std::ostream& operator<< (std::ostream &os, const std::map<Key,Value> & value ) {
+    os<<"[";
+    for(typename std::map<Key,Value>::const_iterator it=value.begin(); it!=value.end(); ++it){
+      os<<"("<<it->first<<"|"<<it->second<<")";
+    }
+    os<<"]";
+    return os;
   }
-  os<<"]";
-  return os;
 }
-
 
 int main(){
   std::cout<<"hello"<<std::endl;
