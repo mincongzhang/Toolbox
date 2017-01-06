@@ -56,4 +56,5 @@ int main(){
   m.insert(std::make_pair(3, 'c'));
   m.insert(std::make_pair(2, 'b'));
   m.insert(std::make_pair(1, 'a'));
-  log("h
+  log("hello map:"<<m);
+}
