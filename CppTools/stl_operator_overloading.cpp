@@ -10,6 +10,8 @@ namespace {
 
   template <typename T>
   inline std::ostream& operator<< (std::ostream &os, const std::vector<T> & value ) {
+    //a name that is not a member of the current instantiation 
+    //and is dependent on a template parameter is not considered to be a type unless the keyword typename is used
     for(typename std::vector<T>::const_iterator it=value.begin(); it!=value.end(); ++it){
       os<<"["<<*it<<"]";
     }
