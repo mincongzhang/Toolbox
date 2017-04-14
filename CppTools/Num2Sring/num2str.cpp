@@ -1,11 +1,10 @@
 #include <sstream>
 
 template<typename T>
-std::string NumberToString ( T Number )
-{
-  stringstream ss;
-  ss << Number;
-  return ss.str();
+std::string toString ( T num ){
+    std::stringstream ss;
+    ss << num;
+    return ss.str();
 }
 
 template<class T>
