@@ -5,6 +5,9 @@
 #include <utility>//make pair
 #include <map>
 
+//NOTE: why add extra typename?
+//It assumes that the name is not a type unless you tell it otherwise
+
 namespace {
   #define log(msg) do{ std::cout<<msg<<"\n"; }while(0)
 
