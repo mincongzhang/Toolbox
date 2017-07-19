@@ -7,6 +7,8 @@
 
 //NOTE: why add extra typename?
 //It assumes that the name is not a type unless you tell it otherwise
+//Whenever referring to a nested name that is a dependent name, i.e. nested inside a template instance with unknown parameter.
+//https://stackoverflow.com/questions/7923369/when-is-the-typename-keyword-necessary
 
 namespace {
   #define log(msg) do{ std::cout<<msg<<"\n"; }while(0)
