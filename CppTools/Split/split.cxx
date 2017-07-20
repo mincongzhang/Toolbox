@@ -6,14 +6,23 @@
 // char delim only with getline
 ///////////////////////////////////////////////////////////////////
 
-string s = "Name:JAck; Spouse:Susan; ...";
-string dummy, name, spouse;
+void split(const std::string & s, char delim, std::vector<std::string> & out){
+  std::stringstream ss(s); // Insert the string into a stream
+  std::string item;
+  while (std::getline(ss, item, delim)) {
+    out.push_back(item);
+  }
+}
 
-istringstream iss(s);
-getline(iss, dummy, ':');
-getline(iss, name, ';');
-getline(iss, dummy, ':');
-getline(iss, spouse, ';')
+int main() {
+  std::string line("12 14 L");
+  std::vector<std::string> out;
+  split(line,' ',out);
+
+  std::cout<<out<<std::endl;
+
+  return 0;
+}
 
 ///////////////////////////////////////////////////////////////////
 // spaces ' ' only
