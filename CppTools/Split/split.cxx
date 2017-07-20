@@ -6,7 +6,7 @@ void split(const std::string & s, const std::string & delim, std::vector<std::st
 
   while(end != std::string::npos){
     out.push_back(s.substr(start, end - start));
-    start = end+1;
+    start = end+delim.size();
     end = s.find_first_of(delim, start);
 }
 
