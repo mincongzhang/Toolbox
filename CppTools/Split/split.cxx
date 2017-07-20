@@ -2,7 +2,6 @@
 // string delim
 ///////////////////////////////////////////////////////////////////
 void split(const std::string & s, const std::string & delim, std::vector<std::string> & out){
-
   std::size_t start = 0, end = s.find_first_of(delim, start);
 
   while(end != std::string::npos){
