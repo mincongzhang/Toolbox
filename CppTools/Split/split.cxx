@@ -1,6 +1,32 @@
 ///////////////////////////////////////////////////////////////////
 // string delim
 ///////////////////////////////////////////////////////////////////
+void split(const std::string & s, const std::string & delim, std::vector<std::string> & out){
+
+  std::size_t start = 0, end = s.find_first_of(delim, start);
+
+  while(end != std::string::npos){
+    out.push_back(s.substr(start, end - start));
+    start = end+1;
+    end = s.find_first_of(delim, start);
+}
+
+  if(start != std::string::npos){
+    out.push_back(s.substr(start));
+  }
+}
+
+
+int main() {
+  std::string line("12\t14\tL");
+  std::vector<std::string> out;
+  split(line,"\t",out);
+
+  std::cout<<out<<std::endl;
+
+  return 0;
+}
+
 
 ///////////////////////////////////////////////////////////////////
 // char delim only with getline
