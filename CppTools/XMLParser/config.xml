@@ -1,0 +1,9 @@
+<coupling>
+  <P algorithm="serial">
+      <M name="flow1" type="GROUNDWATER_FLOW" />
+      <P algorithm="parallel">
+        <M name="compoundA" type="MASS_TRANSPORT" />
+        <M name="compoundB" type="MASS_TRANSPORT" />
+      </P>
+   </P>
+</coupling>
