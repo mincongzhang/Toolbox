@@ -1,0 +1,6 @@
+ <PacketHeader>
+     <HeaderField>
+        <name>number</name>
+        <dataType>int</dataType>
+     </HeaderField>
+ </PacketHeader>
