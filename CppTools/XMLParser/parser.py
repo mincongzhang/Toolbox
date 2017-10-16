@@ -11,3 +11,9 @@ text_node = name_element.childNodes[0]
 
 # get text
 print text_node.data
+
+# Go through the whole xml
+print "for loop:"
+for name_element in xmldoc.getElementsByTagName("name"):
+    text_node = name_element.childNodes[0]
+    print text_node.data
