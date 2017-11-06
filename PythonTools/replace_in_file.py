@@ -17,6 +17,6 @@ print("replacing")
 for key, value in replace_map.items():
     print("replacing:"+key+"->"+value)
 
-    with fileinput.FileInput("quote_fields.xml", inplace=True, backup='.bak') as file:
+    with fileinput.FileInput("sample.xml", inplace=True, backup='.bak') as file:
         for line in file:
             print(line.replace(key, value), end='')
