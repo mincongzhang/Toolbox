@@ -17,3 +17,16 @@ print "for loop:"
 for name_element in xmldoc.getElementsByTagName("name"):
     text_node = name_element.childNodes[0]
     print text_node.data
+
+########################################
+# Sub elements
+########################################
+
+xmldoc = minidom.parse('quote_fields.xml')
+
+# Go through the whole xml
+print("for loop:")
+for field_element in xmldoc.getElementsByTagName("field"):
+    for format in field_element.getElementsByTagName("format"):
+        text_node = format.childNodes[0]
+        print(text_node.data)
