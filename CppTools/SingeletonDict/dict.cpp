@@ -8,14 +8,13 @@ struct Test {
     ~Test(){ std::cout << "~Test()" << std::endl;  }
 };
 
+typedef std::unordered_map<int, std::string> DictMap;
+
 class Dictionary {
 public:
-    typedef std::unordered_map<int, std::string> DictMap;
-
     static void check(int in){
         Init();
-        return;
-        
+
         DictMap::const_iterator it = p_dict->find(in);
         if(it!=p_dict->end()){
         std::cout << it->second << std::endl;
@@ -43,6 +42,9 @@ private:
 
 };
 
+//NOTE: Must init here
+std::unique_ptr<DictMap> Dictionary::p_dict = NULL;
+std::unique_ptr<Test> Dictionary::p_test = NULL;
 
 int main()
 {
