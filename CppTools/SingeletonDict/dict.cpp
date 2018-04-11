@@ -25,6 +25,9 @@ private:
     static std::unique_ptr<DictMap> p_dict;
     static std::unique_ptr<Test> p_test;
     Dictionary(){}
+    //inherit from "private boost::noncopyable" if in C++03
+    Dictionary(const Dictionary&) = delete; // non construction-copyable
+    Dictionary& operator=(const Dictionary&) = delete; // non copyable
     
     static void Init(){
         if(!p_test){
