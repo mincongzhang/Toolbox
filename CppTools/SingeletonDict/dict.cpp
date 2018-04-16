@@ -1,3 +1,22 @@
+/*
+But actually the proper use of singleton should be:
+
+class Dictionary {
+public:
+  static bool getMapA(const std::string & in, int & out){
+    return Singleton<MapA>::Instance().getMapA(in,out);
+  }
+
+  static bool getMapB(const std::string & in, int & out){
+    return Singleton<MapB>::Instance().getMapB(in,out);
+  }
+};
+*/
+
+
+
+
+
 #include <iostream>
 #include <unordered_map>
 #include <string>
