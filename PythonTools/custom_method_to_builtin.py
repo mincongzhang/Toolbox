@@ -14,7 +14,6 @@ class mystr(str):
 
 # Substitute the original str with the subclass on the built-in namespace    
 builtins.str = mystr
-
         
 x = """keep one new line
 
@@ -22,8 +21,6 @@ x = """keep one new line
 
 
 reduce double new lines to one
-
-
 
 
 End"""
