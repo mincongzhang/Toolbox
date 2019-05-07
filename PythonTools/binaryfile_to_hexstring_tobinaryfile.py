@@ -18,6 +18,7 @@ import binascii
 with open("result.txt","r") as f:
     line = f.readline()
     # might need to get rid of "\n"
+    # byte_str_line = line[:-1]
     byte_str_line = line
 
 result = bytearray.fromhex(byte_str_line)
