@@ -1,14 +1,25 @@
+# from file to bytes string
 import binascii
 
 my_byte_array = None
-with open("a.bin", "rb") as binaryfile :
+with open("source.pdf", "rb") as binaryfile :
     my_byte_array = bytearray(binaryfile.read())
     
-print(binascii.hexlify(bytearray(my_byte_array)))
-
+hex_bytes = binascii.hexlify(bytearray(my_byte_array))
+hex_str = hex_bytes.decode() 
+with open("result.txt", "w+") as newFile:
+    newFile.write(hex_str)
+    
 #########################
+# from bytes string to file
 
-hex_str = "25504"
-result = bytearray.fromhex(hex_str)
-with open("b.bin", "wb") as newFile:
+import binascii
+
+with open("result.txt","r") as f:
+    line = f.readline()
+    # might need to get rid of "\n"
+    byte_str_line = line
+
+result = bytearray.fromhex(byte_str_line)
+with open("result.pdf", "wb") as newFile:
     newFile.write(result)
